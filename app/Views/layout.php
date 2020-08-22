@@ -40,6 +40,18 @@
             </a>
           </li>
           <!-- your sidebar here -->
+          <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('KodeWilayah/index') ?>" >
+              <i class="material-icons">bubble_chart</i>
+              <p>Kode Wilayah</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('Data/index') ?>" >
+              <i class="material-icons">bar_chart</i>
+              <p>Data</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
