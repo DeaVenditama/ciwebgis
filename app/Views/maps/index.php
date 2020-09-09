@@ -1,3 +1,19 @@
+<?php
+    $dropDownMenu = [
+        'name' => 'master',
+        'options' => $masterDataMenu,
+        'class' => 'form-control'
+    ];
+
+    $submit = [
+        'name' =>'submit',
+        'id' => 'submit',
+        'value' => 'Pilih Data',
+        'class' => 'btn btn-primary',
+        'type' => 'submit'
+    ];
+
+?>
 <?= $this->extend('layout') ?>
 
 <?= $this->section('head') ?>
@@ -34,8 +50,23 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>
-<h1>Peta Indonesia</h1>
-<div id="maps"></div>
+<div class="row">
+    <div class="card">
+        <div class="card-body">
+            <?= form_open('Maps/index') ?>
+            <div class="row mt-3 mb-3">
+                <div class="col-md-6">
+                    <?= form_dropdown($dropDownMenu) ?>
+                </div>
+                <div class="col-md-6">
+                    <?= form_submit($submit) ?>
+                </div>
+            </div>
+            <?= form_close() ?>
+            <div id="maps"></div>
+        </div>
+    </div>
+</div>
 <?= $this->endSection() ?>
 
 <?= $this->section('script') ?>

@@ -16,7 +16,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Nama Master Data</th>
-                                <th>Kode Wilayah</th>
+                                <th>Nama Wilayah</th>
                                 <th>Nilai Data</th>
                             </tr>
                         </thead>
@@ -25,7 +25,7 @@
                                 <tr>
                                     <td><?= $key+1 ?></td>
                                     <td><?= $value->nama ?></td>
-                                    <td><?= $value->kode_wilayah ?></td>
+                                    <td><?= $value->nama_wilayah ?></td>
                                     <td><?= $value->nilai ?></td>
                                 </tr>
                             <?php endforeach ?>
